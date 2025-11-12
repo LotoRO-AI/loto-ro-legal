@@ -1,40 +1,97 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LotoRO - Documente Legale</title>
-  <style>
-    body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 32px; line-height: 1.6; }
-    a { color: #1db954; text-decoration: none; font-weight: 600; }
-    a:hover { text-decoration: underline; }
-    .container { max-width: 840px; margin: 0 auto; }
-    .card { border: 1px solid #e8e8e8; border-radius: 12px; padding: 24px; margin-bottom: 16px; }
-    h1 { margin-bottom: 8px; }
-    .muted { color: #777; font-size: 14px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LotoRO - Documente Legale</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        h1 {
+            color: #059669;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+        .card {
+            display: block;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 25px;
+            margin: 15px 0;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(5,150,105,0.3);
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(5,150,105,0.4);
+        }
+        .card h2 {
+            margin-bottom: 8px;
+            font-size: 1.5em;
+        }
+        .card p {
+            opacity: 0.9;
+            font-size: 0.95em;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px solid #e5e7eb;
+            color: #666;
+            font-size: 0.9em;
+        }
+        .icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>LotoRO - Documente Legale</h1>
-    <p class="muted">Versiune 1.0.0 • Ultima actualizare: 2025-11-10</p>
-
-    <div class="card">
-      <h2>Politica de Confidențialitate</h2>
-      <p>Consultați politica de confidențialitate pentru aplicația LotoRO:</p>
-      <p><a href="privacy-policy.html">Deschide Politica de Confidențialitate</a></p>
+    <div class="container">
+        <div class="icon">🎲</div>
+        <h1>LotoRO</h1>
+        <p class="subtitle">Documente Legale</p>
+        
+        <a href="privacy-policy.html" class="card">
+            <h2>🔒 Politica de Confidențialitate</h2>
+            <p>Aflați cum protejăm datele dumneavoastră (nu colectăm niciuna!)</p>
+        </a>
+        
+        <a href="terms.html" class="card">
+            <h2>📋 Termeni și Condiții</h2>
+            <p>Condițiile de utilizare a aplicației LotoRO</p>
+        </a>
+        
+        <div class="footer">
+            <strong>LotoRO v1.0.0+3</strong><br>
+            Analiză Statistică pentru Loteria Română<br>
+            📱 Versiune Gratuită: Reclame AdMob<br>
+            💎 Versiune Premium: Fără Reclame<br><br>
+            <small>© 2025 LotoRO. Toate drepturile rezervate.</small>
+        </div>
     </div>
-
-    <div class="card">
-      <h2>Termeni și Condiții</h2>
-      <p>Citiți termenii și condițiile aplicației LotoRO:</p>
-      <p><a href="terms.html">Deschide Termeni și Condiții</a></p>
-    </div>
-
-    <div class="card">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:loto.app.ro@gmail.com">loto.app.ro@gmail.com</a></p>
-    </div>
-  </div>
 </body>
 </html>

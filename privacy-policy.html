@@ -68,6 +68,13 @@
             margin: 20px 0;
             border-radius: 4px;
         }
+        .admob-box {
+            background: #dbeafe;
+            padding: 20px;
+            border-left: 4px solid #3b82f6;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
         .back-link {
             display: inline-block;
             margin-top: 30px;
@@ -100,8 +107,9 @@
         <h1>🔒 POLITICA DE CONFIDENȚIALITATE</h1>
         <div class="meta">
             <strong>Aplicație:</strong> LotoRO - Analiză Statistică Loto<br>
-            <strong>Ultima actualizare:</strong> 6 Noiembrie 2025<br>
-            <strong>Versiune:</strong> 1.0
+            <strong>Ultima actualizare:</strong> 15 Ianuarie 2025<br>
+            <strong>Versiune:</strong> 1.1 (actualizat pentru AdMob)<br>
+            <strong>App Version:</strong> 1.0.0+3
         </div>
 
         <h2>1. COLECTARE DATE</h2>
@@ -140,66 +148,171 @@
         </ul>
 
         <h2>3. PERMISIUNI</h2>
-        <p>Aplicația <strong>NU solicită permisiuni</strong> pentru:</p>
+        <p>Aplicația solicită doar permisiunea <strong>INTERNET</strong> pentru funcționalitatea de reclame (AdMob).</p>
+        
+        <h3>Permisiuni Android:</h3>
         <ul>
-            <li>❌ Locație GPS - nu folosim</li>
-            <li>❌ Cameră/Microfon - nu folosim</li>
-            <li>❌ Contacte - nu folosim</li>
-            <li>❌ Fotografii/Media - nu folosim</li>
-            <li>❌ Internet - aplicația funcționează <strong>100% offline</strong></li>
+            <li>✅ <strong>INTERNET</strong> - pentru afișare reclame AdMob</li>
+            <li>✅ <strong>ACCESS_NETWORK_STATE</strong> - pentru verificare conectivitate</li>
+            <li>✅ <strong>AD_ID</strong> - pentru personalizare reclame (Android 13+)</li>
         </ul>
 
-        <h2>4. THIRD-PARTY SERVICES</h2>
-        <p>Aplicația <strong>NU folosește</strong>:</p>
+        <h3>Permisiuni NU solicitate:</h3>
+        <ul>
+            <li>❌ Locație GPS</li>
+            <li>❌ Cameră/Microfon</li>
+            <li>❌ Contacte</li>
+            <li>❌ Fotografii/Media</li>
+        </ul>
+
+        <h2>4. THIRD-PARTY SERVICES - RECLAME (ADMOB)</h2>
+        
+        <div class="admob-box">
+            <h3>📱 Google AdMob - Reclame în Versiunea Gratuită</h3>
+            <p>Aplicația folosește <strong>Google AdMob</strong> pentru afișarea de reclame banner în versiunea gratuită.</p>
+        </div>
+
+        <h3>Ce folosește AdMob:</h3>
+        <ul>
+            <li>✅ <strong>Advertising ID</strong> (AAID pe Android, IDFA pe iOS) - pentru personalizarea reclamelor</li>
+            <li>✅ <strong>Informații despre device</strong> (model, sistem de operare, versiune)</li>
+            <li>✅ <strong>Informații despre aplicație</strong> (nume, versiune)</li>
+            <li>✅ <strong>IP address</strong> - pentru servirea reclamelor relevante</li>
+            <li>✅ <strong>Cookies și tehnologii similare</strong> pentru tracking</li>
+        </ul>
+
+        <h3>Ce face AdMob cu aceste date:</h3>
+        <ul>
+            <li>📊 Personalizează reclamele afișate</li>
+            <li>📊 Măsoară performanța reclamelor</li>
+            <li>📊 Partajează date cu advertiseri pentru targeting</li>
+            <li>📊 Folosește date pentru analiză și raportare</li>
+        </ul>
+
+        <h3>🎛️ Control utilizator - Cum dezactivați personalizarea reclamelor:</h3>
+        <div class="highlight">
+            <strong>Android:</strong><br>
+            Settings → Google → Ads → <strong>Reset advertising ID</strong> sau <strong>Opt out of Ads Personalization</strong>
+            <br><br>
+            <strong>iOS:</strong><br>
+            Settings → Privacy → Advertising → <strong>Limit Ad Tracking</strong>
+        </div>
+
+        <h3>💎 Utilizatori Premium:</h3>
+        <p><strong>Utilizatorii cu abonament premium NU văd reclame</strong> și nu se colectează date AdMob pentru ei.</p>
+
+        <h3>Baza legală GDPR:</h3>
+        <ul>
+            <li>✅ <strong>Articolul 6(1)(f) GDPR</strong> - Interes legitim pentru monetizare</li>
+            <li>✅ <strong>Articolul 6(1)(a) GDPR</strong> - Consimțământ (implicit prin utilizarea versiunii gratuite)</li>
+        </ul>
+
+        <h3>Alte servicii NU folosite:</h3>
         <ul>
             <li>❌ Google Analytics sau alte servicii de tracking</li>
-            <li>❌ Reclame third-party (AdMob, Facebook Ads, etc.)</li>
-            <li>❌ Servere externe sau API-uri</li>
+            <li>❌ Servere externe sau API-uri (în afară de AdMob)</li>
             <li>❌ Social media sharing sau login</li>
             <li>❌ Cloud backup (iCloud, Google Drive)</li>
             <li>❌ Crash reporting (Firebase Crashlytics, Sentry)</li>
         </ul>
-        <p><strong>Zero servicii externe = Zero transmisie de date</strong></p>
 
-        <h2>5. DREPTURILE DUMNEAVOASTRĂ (GDPR)</h2>
-        <p>Conform GDPR, aveți dreptul să:</p>
+        <h2>5. SECURITATE</h2>
+        <p>Datele dumneavoastră sunt stocate în mod securizat:</p>
         <ul>
-            <li>✅ <strong>Dreptul de acces:</strong> Toate datele sunt vizibile în aplicație</li>
-            <li>✅ <strong>Dreptul de ștergere:</strong> Settings → Date → Clear All Data</li>
-            <li>✅ <strong>Dreptul la portabilitate:</strong> Planificat pentru v1.1+</li>
+            <li>✅ Storage izolat al aplicației (sandbox)</li>
+            <li>✅ Protejat de sistemul de operare (Android/iOS)</li>
+            <li>✅ Nicio transmisie în afara device-ului (în afară de AdMob)</li>
         </ul>
 
+        <h2>6. DREPTURILE DUMNEAVOASTRĂ (GDPR)</h2>
+        <p>Conform GDPR, aveți următoarele drepturi:</p>
+        
+        <h3>✅ Dreptul de acces:</h3>
+        <p>Toate datele locale sunt vizibile în aplicație (Settings, Favorites, History)</p>
+
+        <h3>✅ Dreptul de ștergere (Right to Erasure):</h3>
+        <ul>
+            <li><strong>Settings → Date → Clear All Data</strong> - șterge toate datele locale</li>
+            <li><strong>Dezinstalare aplicație</strong> - șterge automat toate datele</li>
+            <li><strong>Reset Advertising ID</strong> (pentru AdMob) - în setările device-ului</li>
+        </ul>
+
+        <h3>✅ Dreptul de opoziție:</h3>
+        <p>Puteți dezactiva personalizarea reclamelor în setările device-ului (vezi secțiunea 4)</p>
+
         <div class="highlight">
-            <strong>📝 Notă:</strong> Deoarece nu colectăm date personale, majoritatea drepturilor GDPR nu se aplică.
+            <strong>📝 Notă:</strong> Deoarece nu colectăm date personale direct (în afară de AdMob care este gestionat de Google), majoritatea drepturilor GDPR se aplică prin intermediul Google.
         </div>
 
-        <h2>6. MINORI (SUB 18 ANI)</h2>
+        <h2>7. MINORI (SUB 18 ANI)</h2>
         <div class="highlight">
             <strong>⚠️ Restricție de vârstă: 18+</strong><br><br>
-            Aplicația LotoRO este destinată exclusiv adulților. Dacă sunteți sub 18 ani, NU utilizați această aplicație.
+            Aplicația LotoRO este destinată exclusiv adulților (18+ ani). Dacă sunteți sub 18 ani, NU utilizați această aplicație.
+            <br><br>
+            Părinții sunt responsabili pentru monitorizarea utilizării device-ului de către minori.
         </div>
 
-        <h2>7. CONTACT</h2>
-        <p>Pentru întrebări despre această Politică de Confidențialitate:</p>
+        <h2>8. MODIFICĂRI ALE POLITICII</h2>
+        <p>Ne rezervăm dreptul de a modifica această Politică de Confidențialitate.</p>
+        
+        <h3>În caz de modificări:</h3>
         <ul>
-            <li>📧 <strong>Email:</strong> <a href="mailto:loto.app.ro@gmail.com">loto.app.ro@gmail.com</a></li>
-            <li>🌐 <strong>Website:</strong> Coming soon</li>
-            <li>📱 <strong>App Version:</strong> 1.0.0 (1)</li>
+            <li>✅ Versiunea actualizată va fi disponibilă în aplicație (Settings → About)</li>
+            <li>✅ Versiunea curentă va fi disponibilă pe website-ul nostru</li>
+            <li>✅ Veți fi notificat prin update-ul aplicației</li>
         </ul>
 
-        <h2>8. REZUMAT GDPR</h2>
+        <p><strong>Data ultimei actualizări:</strong> 15 Ianuarie 2025<br>
+        <strong>Versiune:</strong> 1.1 (actualizat pentru AdMob)</p>
+
+        <h2>9. CONTACT</h2>
+        <p>Pentru întrebări despre această Politică de Confidențialitate:</p>
+        <ul>
+            <li>📧 <strong>Email:</strong> <em>În curs de configurare</em></li>
+            <li>🌐 <strong>Website:</strong> <em>În curs de configurare</em></li>
+            <li>📱 <strong>App Version:</strong> 1.0.0+3</li>
+        </ul>
+        <p><strong>Timp de răspuns:</strong> Maximum 48 ore lucrătoare</p>
+
+        <h2>10. REZUMAT GDPR</h2>
         <p><strong>LotoRO este conformă cu GDPR deoarece:</strong></p>
         <ol>
-            <li>✅ Nu colectează date cu caracter personal</li>
-            <li>✅ Nu transferă date în afara UE (nu transferă deloc)</li>
-            <li>✅ Nu folosește cookies sau tracking</li>
-            <li>✅ Utilizatorul poate șterge toate datele locale</li>
-            <li>✅ Transparență completă</li>
+            <li>✅ Colectează doar date necesare pentru funcționalități (AdMob pentru versiunea gratuită)</li>
+            <li>✅ AdMob este GDPR-compliant și procesează date conform standardelor UE</li>
+            <li>✅ Utilizatorii pot controla personalizarea reclamelor în setările device-ului</li>
+            <li>✅ Utilizatorii premium NU văd reclame (nu se colectează date pentru ei)</li>
+            <li>✅ Utilizatorul poate șterge toate datele locale (Settings → Date → Clear All Data)</li>
+            <li>✅ Transparență completă (acest document)</li>
+            <li>✅ Informare clară despre datele colectate de AdMob</li>
         </ol>
+
+        <div class="highlight">
+            <strong>Concluzie:</strong> Aplicația este GDPR-compliant. Datele colectate de AdMob sunt procesate conform politicilor Google și GDPR. Utilizatorii au control asupra personalizării reclamelor.
+        </div>
+
+        <h2>11. DECLARAȚIE TRANSPARENȚĂ</h2>
+        
+        <h3>✅ Ce face aplicația:</h3>
+        <ul>
+            <li>✅ Analizează statistici pe baza datelor istorice publice (extrageri loto)</li>
+            <li>✅ Generează combinații de numere folosind algoritmi statistici</li>
+            <li>✅ Salvează preferințele și favoritele utilizatorului LOCAL pe device</li>
+            <li>✅ Afișează reclame AdMob (doar în versiunea gratuită)</li>
+        </ul>
+
+        <h3>❌ Ce NU face aplicația:</h3>
+        <ul>
+            <li>❌ Nu trimite date personale pe internet</li>
+            <li>❌ Nu comunică cu servere externe (în afară de AdMob)</li>
+            <li>❌ Nu colectează informații personale</li>
+            <li>❌ Nu face tracking sau analytics (în afară de AdMob)</li>
+            <li>❌ Nu garantează câștiguri la loterie</li>
+        </ul>
 
         <p style="margin-top: 40px; padding-top: 20px; border-top: 2px solid #e5e7eb; color: #666; text-align: center;">
             <strong>© 2025 LotoRO. Toate drepturile rezervate.</strong><br>
-            Jucați responsabil. Nu garantăm câștiguri.
+            Jucați responsabil. Nu garantăm câștiguri.<br>
+            Această aplicație este destinată exclusiv divertismentului și analizei statistice.
         </p>
 
         <a href="index.html" class="back-link">← Înapoi la Documente</a>
