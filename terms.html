@@ -35,6 +35,12 @@
             border-bottom: 2px solid #10b981;
             padding-bottom: 5px;
         }
+        h3 {
+            color: #065f46;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
         .meta {
             color: #666;
             font-size: 0.9em;
@@ -51,8 +57,23 @@
             margin: 20px 0;
             border-radius: 4px;
         }
+        .info-box {
+            background: #dbeafe;
+            padding: 20px;
+            border-left: 4px solid #3b82f6;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .danger-box {
+            background: #fee2e2;
+            padding: 20px;
+            border-left: 4px solid #ef4444;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
         p { margin-bottom: 15px; text-align: justify; }
         ul { margin-left: 30px; margin-bottom: 15px; }
+        ol { margin-left: 30px; margin-bottom: 15px; }
         li { margin-bottom: 8px; }
         .back-link {
             display: inline-block;
@@ -65,6 +86,11 @@
             transition: background 0.3s;
         }
         .back-link:hover { background: #047857; }
+        @media (max-width: 768px) {
+            .container { padding: 20px; }
+            h1 { font-size: 1.8em; }
+            h2 { font-size: 1.4em; }
+        }
     </style>
 </head>
 <body>
@@ -72,66 +98,319 @@
         <h1>📋 TERMENI ȘI CONDIȚII</h1>
         <div class="meta">
             <strong>Aplicație:</strong> LotoRO - Analiză Statistică Loto<br>
-            <strong>Ultima actualizare:</strong> 15 Ianuarie 2025<br>
-            <strong>Versiune:</strong> 1.1<br>
-            <strong>App Version:</strong> 1.0.0+3
+            <strong>Ultima actualizare:</strong> 6 Ianuarie 2026<br>
+            <strong>Versiune:</strong> 2.0 (actualizat complet)<br>
+            <strong>App Version:</strong> 1.0.6+38
         </div>
 
         <h2>1. ACCEPTARE TERMENI</h2>
-        <p>Prin utilizarea aplicației LotoRO, acceptați să fiți legat de acești Termeni și Condiții.</p>
+        <p>Prin descărcarea, instalarea sau utilizarea aplicației LotoRO, acceptați să fiți legat de acești Termeni și Condiții. 
+        Dacă nu sunteți de acord cu acești termeni, vă rugăm să NU utilizați aplicația.</p>
 
         <h2>2. DESCRIERE SERVICIU</h2>
-        <p>LotoRO este o aplicație de analiză statistică pentru loteriile românești: Joker, Loto 6/49, și Loto 5/40.</p>
-
-        <h2>3. ⚠️ DISCLAIMER IMPORTANT</h2>
-        <div class="warning">
-            <h3>Joc Responsabil</h3>
-            <p><strong>LotoRO este un instrument de analiză statistică și divertisment.</strong></p>
-            <ul>
-                <li>❌ <strong>NU garantează câștiguri</strong> la loterie</li>
-                <li>⚠️ Rezultatele sunt generate pe bază de analiză statistică</li>
-                <li>💰 Jocurile de noroc implică <strong>riscuri financiare</strong></li>
-                <li>🎲 Jucați <strong>responsabil</strong> și conform bugetului</li>
-            <ul>
-                <li>📧 Email: loto.app.ro@gmail.com</li>
-                <li>🌐 Website: În curs de configurare</li>
-            </ul>
-        <h2>4. LIMITARE RĂSPUNDERE</h2>
-        <p>Dezvoltatorii NU sunt responsabili pentru:</p>
+        <p>LotoRO este o aplicație mobilă de analiză statistică pentru loteriile românești:</p>
         <ul>
-            <li>❌ Pierderi financiare rezultate din utilizare</li>
-            <li>❌ Acuratețea 100% a datelor istorice</li>
-            <li>❌ Erori sau bug-uri software</li>
-            <li>❌ Daune directe sau indirecte</li>
+            <li>✅ <strong>Loto 6/49</strong> - Analiză statistică și generare variante</li>
+            <li>✅ <strong>Loto 5/40</strong> - Analiză statistică și generare variante</li>
+            <li>✅ <strong>Joker</strong> - Analiză statistică și generare variante</li>
+            <li>✅ <strong>Wallet</strong> - Scanare și gestionare bilete loto</li>
+            <li>✅ <strong>Statistici</strong> - Analiză date istorice extrageri</li>
+            <li>✅ <strong>Notificări</strong> - Alertă pentru rezultate noi extrageri</li>
         </ul>
 
-        <h2>5. DATE HISTORICE</h2>
-        <p>Datele de extrageri sunt colectate din surse publice și pot conține erori. <strong>Verificați întotdeauna numerele pe site-ul oficial Loteria Română.</strong></p>
-        <p>Website oficial: <strong>https://www.loto.ro</strong></p>
+        <h2>3. ⚠️ DISCLAIMER IMPORTANT - JOC RESPONSABIL</h2>
+        <div class="danger-box">
+            <h3>🚨 ATENȚIE: JOC RESPONSABIL</h3>
+            <p><strong>LotoRO este un instrument de analiză statistică și divertisment. NU este un instrument de jocuri de noroc.</strong></p>
+            
+            <h4>❌ Ce NU face aplicația:</h4>
+            <ul>
+                <li>❌ <strong>NU garantează câștiguri</strong> la loterie</li>
+                <li>❌ <strong>NU vinde bilete</strong> la loterie</li>
+                <li>❌ <strong>NU procesează plăți</strong> pentru bilete</li>
+                <li>❌ <strong>NU influențează</strong> rezultatele extragerilor</li>
+                <li>❌ <strong>NU oferă sfaturi financiare</strong> sau garanții de câștig</li>
+            </ul>
 
-        <h2>6. RESTRICȚIE VÂRSTĂ</h2>
-        <div class="warning">
-            <p><strong>18+</strong> - Această aplicație este destinată exclusiv adulților.</p>
+            <h4>⚠️ Avertismente importante:</h4>
+            <ul>
+                <li>⚠️ Rezultatele sunt generate pe bază de <strong>analiză statistică</strong> - nu sunt predicții garantate</li>
+                <li>💰 Jocurile de noroc implică <strong>riscuri financiare</strong> - jucați doar cu bani pe care vă puteți permite să îi pierdeți</li>
+                <li>🎲 Jucați <strong>responsabil</strong> și conform bugetului dumneavoastră</li>
+                <li>📊 Statisticile nu garantează rezultate viitoare - fiecare extragere este independentă</li>
+            </ul>
+
+            <h4>🆘 Ajutor pentru joc responsabil:</h4>
+            <ul>
+                <li>📧 <strong>Email:</strong> loto.app.ro@gmail.com</li>
+                <li>🌐 <strong>Website oficial Loteria Română:</strong> <a href="https://www.loto.ro" target="_blank">https://www.loto.ro</a></li>
+                <li>📞 <strong>Linia Verde Jocuri de Noroc:</strong> 0800 800 100 (gratuit, 24/7)</li>
+            </ul>
         </div>
 
-        <h2>7. LEGEA APLICABILĂ</h2>
-        <p>Acești termeni sunt guvernați de <strong>legile României</strong>.</p>
+        <h2>4. FUNCȚIONALITĂȚI APLICAȚIE</h2>
 
-        <h2>8. CONTACT</h2>
-        <p>Pentru întrebări despre acești Termeni și Condiții:</p>
+        <h3>4.1. Generator Variante</h3>
+        <p>Funcționalitatea de generare variante folosește algoritmi statistici pentru a sugera combinații de numere. 
+        Aceste combinații sunt <strong>sugestii bazate pe analiză statistică</strong> și NU garantează câștiguri.</p>
+
+        <h3>4.2. Wallet (Portofel Bilete)</h3>
+        <div class="info-box">
+            <h4>📱 Funcționalitate Wallet</h4>
+            <p>Wallet permite scanarea și stocarea biletelor loto pentru verificare automată a câștigurilor.</p>
+            
+            <h4>Funcționalități:</h4>
+            <ul>
+                <li>✅ <strong>Scanare Barcode</strong> - Scanare coduri de bare de pe bilete</li>
+                <li>✅ <strong>Scanare OCR</strong> - Recunoaștere text din poze bilete</li>
+                <li>✅ <strong>Verificare automată</strong> - Verificare câștiguri la fiecare extragere nouă</li>
+                <li>✅ <strong>Notificări câștiguri</strong> - Alertă când un bilet are câștiguri</li>
+                <li>✅ <strong>Statistici personale</strong> - Vizualizare statistici bilete și câștiguri</li>
+            </ul>
+
+            <h4>⚠️ Limitări și responsabilități:</h4>
+            <ul>
+                <li>⚠️ <strong>Verificarea este automată</strong> dar NU garantează acuratețea 100%</li>
+                <li>⚠️ <strong>Verificați întotdeauna</strong> rezultatele pe site-ul oficial <a href="https://www.loto.ro" target="_blank">loto.ro</a></li>
+                <li>⚠️ <strong>LotoRO nu este responsabil</strong> pentru erori în scanare sau verificare</li>
+                <li>⚠️ <strong>Datele sunt stocate local</strong> - LotoRO nu are acces la biletele dumneavoastră</li>
+            </ul>
+
+            <h4>🔒 Securitate:</h4>
+            <ul>
+                <li>✅ Toate datele Wallet sunt stocate <strong>local pe device-ul dumneavoastră</strong></li>
+                <li>✅ <strong>NU sunt transmise</strong> pe internet (în afară de verificare câștiguri care folosește doar numerele)</li>
+                <li>✅ <strong>NU sunt partajate</strong> cu terțe părți</li>
+                <li>✅ Pot fi șterse oricând din <strong>Settings → Wallet → Clear All</strong></li>
+            </ul>
+        </div>
+
+        <h3>4.3. Premium Subscriptions (Abonamente Premium)</h3>
+        <div class="info-box">
+            <h4>💎 Funcționalitate Premium</h4>
+            <p>LotoRO oferă abonamente premium care oferă funcționalități suplimentare și elimină reclamele.</p>
+            
+            <h4>Beneficii Premium:</h4>
+            <ul>
+                <li>✅ <strong>Fără reclame</strong> - Elimină toate reclamele AdMob</li>
+                <li>✅ <strong>Funcționalități avansate</strong> - Acces la toate funcționalitățile aplicației</li>
+                <li>✅ <strong>Prioritate suport</strong> - Răspunsuri mai rapide la întrebări</li>
+            </ul>
+
+            <h4>Tipuri abonamente:</h4>
+            <ul>
+                <li>💰 <strong>Monthly</strong> - Abonament lunar (se reînnoiește automat)</li>
+                <li>💰 <strong>Annual</strong> - Abonament anual (se reînnoiește automat)</li>
+                <li>💰 <strong>Lifetime</strong> - Abonament pe viață (fără reînnoire)</li>
+            </ul>
+
+            <h4>⚠️ Termeni și condiții abonamente:</h4>
+            <ul>
+                <li>✅ <strong>Plățile sunt procesate</strong> prin Google Play (Android) sau App Store (iOS)</li>
+                <li>✅ <strong>Reînnoiri automate</strong> - Abonamentele lunare/anuale se reînnoiesc automat</li>
+                <li>✅ <strong>Anulare</strong> - Poți anula abonamentul oricând din Google Play / App Store</li>
+                <li>✅ <strong>Rambursări</strong> - Conform politicilor Google Play / App Store</li>
+                <li>⚠️ <strong>LotoRO nu procesează direct</strong> plăți - toate plățile sunt gestionate de intermediari</li>
+            </ul>
+
+            <h4>📋 Politici plăți:</h4>
+            <ul>
+                <li>✅ <a href="https://support.google.com/googleplay/answer/2479637" target="_blank">Google Play Billing Policy</a></li>
+                <li>✅ <a href="https://support.apple.com/en-us/HT202039" target="_blank">App Store In-App Purchase Policy</a></li>
+            </ul>
+        </div>
+
+        <h3>4.4. Referral Program (Program de Referral)</h3>
+        <div class="info-box">
+            <h4>🎁 Program de Referral</h4>
+            <p>LotoRO oferă un program de referral care permite utilizatorilor să se înregistreze pentru a primi acces premium.</p>
+            
+            <h4>Funcționare:</h4>
+            <ul>
+                <li>✅ <strong>Înregistrare voluntară</strong> - Utilizatorii se pot înregistra cu email-ul lor</li>
+                <li>✅ <strong>Aprobare admin</strong> - Admin-ul aprobă utilizatori selectați</li>
+                <li>✅ <strong>Acces premium</strong> - Utilizatorii aprobați primesc acces premium gratuit</li>
+            </ul>
+
+            <h4>⚠️ Termeni:</h4>
+            <ul>
+                <li>⚠️ <strong>Înregistrarea nu garantează</strong> aprobare sau acces premium</li>
+                <li>⚠️ <strong>Admin-ul are dreptul</strong> de a aproba sau respinge orice înregistrare</li>
+                <li>⚠️ <strong>Accesul premium poate fi revocat</strong> în orice moment de către admin</li>
+                <li>✅ <strong>Email-urile sunt procesate</strong> conform GDPR (vezi Privacy Policy)</li>
+            </ul>
+        </div>
+
+        <h3>4.5. Notificări Push</h3>
+        <p>Aplicația folosește <strong>Firebase Cloud Messaging (FCM)</strong> pentru a trimite notificări push despre:</p>
         <ul>
-            <li>📧 <strong>Email:</strong> <em>În curs de configurare</em></li>
-            <li>🌐 <strong>Website:</strong> <em>În curs de configurare</em></li>
-            <li>📱 <strong>App Version:</strong> 1.0.0+3</li>
+            <li>✅ Rezultate noi extrageri</li>
+            <li>✅ Câștiguri detectate în Wallet</li>
+            <li>✅ Actualizări importante aplicație</li>
+        </ul>
+        <p>Poți dezactiva notificările oricând din <strong>Settings → Notificări</strong>.</p>
+
+        <h2>5. LIMITARE RĂSPUNDERE</h2>
+        <div class="warning">
+            <h3>⚠️ LIMITARE RĂSPUNDERE</h3>
+            <p><strong>Dezvoltatorii LotoRO NU sunt responsabili pentru:</strong></p>
+            <ul>
+                <li>❌ <strong>Pierderi financiare</strong> rezultate din utilizarea aplicației</li>
+                <li>❌ <strong>Acuratețea 100%</strong> a datelor istorice sau a rezultatelor generate</li>
+                <li>❌ <strong>Erori sau bug-uri software</strong> care pot afecta funcționalitatea</li>
+                <li>❌ <strong>Daune directe sau indirecte</strong> rezultate din utilizare</li>
+                <li>❌ <strong>Erori în scanare Wallet</strong> sau verificare câștiguri</li>
+                <li>❌ <strong>Probleme cu plăți</strong> (gestionate de Google Play / App Store)</li>
+                <li>❌ <strong>Pierdere date</strong> rezultate din dezinstalare sau reset device</li>
+                <li>❌ <strong>Probleme de conectivitate</strong> care afectează sincronizarea</li>
+            </ul>
+
+            <p><strong>Utilizarea aplicației este pe propriul risc.</strong> LotoRO este furnizat "AS IS" fără garanții de orice fel.</p>
+        </div>
+
+        <h2>6. DATE ISTORICE ȘI ACURATEȚE</h2>
+        <div class="info-box">
+            <h4>📊 Date Istorice Extrageri</h4>
+            <p>Datele de extrageri sunt colectate din surse publice și pot conține erori sau întârzieri.</p>
+            
+            <h4>⚠️ IMPORTANT:</h4>
+            <ul>
+                <li>⚠️ <strong>Verificați întotdeauna</strong> numerele pe site-ul oficial <a href="https://www.loto.ro" target="_blank">https://www.loto.ro</a></li>
+                <li>⚠️ <strong>LotoRO nu garantează</strong> acuratețea 100% a datelor istorice</li>
+                <li>⚠️ <strong>Datele pot fi actualizate</strong> cu întârziere față de site-ul oficial</li>
+                <li>⚠️ <strong>Nu folosiți aplicația</strong> ca singura sursă de informații pentru bilete</li>
+            </ul>
+
+            <p><strong>Website oficial Loteria Română:</strong> <a href="https://www.loto.ro" target="_blank">https://www.loto.ro</a></p>
+        </div>
+
+        <h2>7. RESTRICȚIE VÂRSTĂ</h2>
+        <div class="danger-box">
+            <h3>🚨 RESTRICȚIE DE VÂRSTĂ: 18+</h3>
+            <p><strong>Această aplicație este destinată exclusiv adulților (18+ ani)</strong> conform legislației românești privind jocurile de noroc.</p>
+            
+            <h4>Dacă sunteți sub 18 ani:</h4>
+            <ul>
+                <li>❌ <strong>NU utilizați</strong> această aplicație</li>
+                <li>❌ <strong>NU vă înregistrați</strong> pentru premium</li>
+                <li>❌ <strong>NU participați</strong> la programul de referral</li>
+                <li>❌ <strong>NU descărcați</strong> sau instalați aplicația</li>
+            </ul>
+
+            <h4>Părinți:</h4>
+            <p>Sunteți responsabili pentru monitorizarea utilizării device-ului de către minori. 
+            Aplicația nu colectează intenționat date de la minori, dar nu putem garanta că un minor nu va accesa aplicația.</p>
+        </div>
+
+        <h2>8. PROPRIETATE INTELECTUALĂ</h2>
+        <p>Toate drepturile de proprietate intelectuală asupra aplicației LotoRO, inclusiv codul sursă, design-ul, logo-urile, 
+        și conținutul, aparțin dezvoltatorilor LotoRO sau licențiatorilor lor.</p>
+        
+        <h3>8.1. Licență de utilizare</h3>
+        <p>Vi se acordă o licență limitată, neexclusivă, ne-transferabilă, de a utiliza aplicația LotoRO pe device-urile dumneavoastră 
+        în scop personal, necomercial, conform acestor Termeni și Condiții.</p>
+
+        <h3>8.2. Restricții</h3>
+        <p>NU aveți dreptul să:</p>
+        <ul>
+            <li>❌ Copiați, modificați sau distribuiți aplicația sau codul sursă</li>
+            <li>❌ Reverse-engineer sau decompila aplicația</li>
+            <li>❌ Creați lucrări derivate bazate pe aplicație</li>
+            <li>❌ Folosiți aplicația în scopuri comerciale fără permisiune</li>
+            <li>❌ Eliminați sau modificați notificările de copyright</li>
+        </ul>
+
+        <h2>9. MODIFICĂRI ȘI ACTUALIZĂRI</h2>
+        <p>Ne rezervăm dreptul de a modifica sau actualiza aplicația, funcționalitățile, sau acești Termeni și Condiții în orice moment.</p>
+        
+        <h3>9.1. Actualizări aplicație</h3>
+        <ul>
+            <li>✅ Actualizările pot include corecții de bug-uri, funcționalități noi, sau îmbunătățiri</li>
+            <li>✅ Actualizările pot fi obligatorii pentru funcționalitate</li>
+            <li>✅ Nu garantăm că toate funcționalitățile vor rămâne disponibile în versiuni viitoare</li>
+        </ul>
+
+        <h3>9.2. Modificări termeni</h3>
+        <ul>
+            <li>✅ Veți fi notificat despre modificări semnificative prin actualizarea aplicației</li>
+            <li>✅ Continuarea utilizării după modificări constituie acceptarea noilor termeni</li>
+            <li>✅ Dacă nu sunteți de acord cu modificările, dezinstalați aplicația</li>
+        </ul>
+
+        <h2>10. REZILIERE</h2>
+        <p>Ne rezervăm dreptul de a rezilia sau suspenda accesul la aplicație pentru orice utilizator care:</p>
+        <ul>
+            <li>❌ Încalcă acești Termeni și Condiții</li>
+            <li>❌ Folosește aplicația în mod abuziv sau ilegal</li>
+            <li>❌ Încearcă să compromită securitatea aplicației</li>
+            <li>❌ Folosește aplicația pentru a înșela sau a încălca legile</li>
+        </ul>
+
+        <h2>11. SERVICII TERȚE</h2>
+        <p>Aplicația folosește următoarele servicii terțe:</p>
+        <ul>
+            <li>✅ <strong>Google Firebase</strong> - Pentru notificări, sincronizare, crash reporting, performance monitoring</li>
+            <li>✅ <strong>Google AdMob</strong> - Pentru reclame (versiunea gratuită)</li>
+            <li>✅ <strong>Google Play / App Store</strong> - Pentru distribuție și plăți premium</li>
+        </ul>
+        <p>Utilizarea acestor servicii este supusă termenilor și condițiilor respective. 
+        Consultați <a href="privacy-policy.html" target="_blank">Privacy Policy</a> pentru detalii despre datele colectate.</p>
+
+        <h2>12. LEGEA APLICABILĂ ȘI JURISDICȚIE</h2>
+        <p>Acești Termeni și Condiții sunt guvernați de <strong>legile României</strong>.</p>
+        
+        <h3>12.1. Jurisdicție</h3>
+        <p>Orice dispută rezultată din sau legată de acești Termeni și Condiții va fi rezolvată de către <strong>instanțele competente din România</strong>.</p>
+
+        <h3>12.2. Legea aplicabilă</h3>
+        <ul>
+            <li>✅ <strong>Legea 190/2018</strong> - Privind măsurile de implementare a Regulamentului (UE) 2016/679</li>
+            <li>✅ <strong>Codul Civil Român</strong> - Pentru aspecte contractuale</li>
+            <li>✅ <strong>Legea 363/2018</strong> - Privind jocurile de noroc</li>
+        </ul>
+
+        <h2>13. DISPOZIȚII FINALE</h2>
+        
+        <h3>13.1. Divizibilitate</h3>
+        <p>Dacă orice dispoziție din acești Termeni și Condiții este considerată nevalidă sau inaplicabilă, 
+        dispozițiile rămase vor rămâne în vigoare.</p>
+
+        <h3>13.2. Renunțare</h3>
+        <p>Nicio renunțare la orice dispoziție din acești Termeni și Condiții nu va fi considerată o renunțare ulterioară la aceeași sau alte dispoziții.</p>
+
+        <h3>13.3. Acord complet</h3>
+        <p>Acești Termeni și Condiții, împreună cu <a href="privacy-policy.html" target="_blank">Privacy Policy</a>, 
+        constituie acordul complet între dumneavoastră și LotoRO privind utilizarea aplicației.</p>
+
+        <h2>14. CONTACT</h2>
+        <p>Pentru întrebări, suport sau reclamații despre acești Termeni și Condiții:</p>
+        <ul>
+            <li>📧 <strong>Email:</strong> loto.app.ro@gmail.com</li>
+            <li>🌐 <strong>Website:</strong> <a href="https://loto-ro-admin.web.app" target="_blank">https://loto-ro-admin.web.app</a></li>
+            <li>📱 <strong>App Version:</strong> 1.0.6+38</li>
         </ul>
         <p><strong>Timp de răspuns:</strong> Maximum 48 ore lucrătoare</p>
 
+        <h2>15. RECUNOAȘTERE</h2>
+        <p>Prin utilizarea aplicației LotoRO, recunoașteți că:</p>
+        <ol>
+            <li>✅ Ați citit și înțeles acești Termeni și Condiții</li>
+            <li>✅ Ați citit și înțeles <a href="privacy-policy.html" target="_blank">Privacy Policy</a></li>
+            <li>✅ Sunteți de vârstă legală (18+ ani) pentru a utiliza aplicația</li>
+            <li>✅ Acceptați toate riscurile asociate cu utilizarea aplicației</li>
+            <li>✅ Nu veți folosi aplicația în mod abuziv sau ilegal</li>
+            <li>✅ Veți verifica întotdeauna rezultatele pe site-ul oficial <a href="https://www.loto.ro" target="_blank">loto.ro</a></li>
+        </ol>
+
         <p style="margin-top: 40px; padding-top: 20px; border-top: 2px solid #e5e7eb; color: #666; text-align: center;">
-            <strong>© 2025 LotoRO. Toate drepturile rezervate.</strong><br>
-            Jucați responsabil. Nu garantăm câștiguri.
+            <strong>© 2026 LotoRO. Toate drepturile rezervate.</strong><br>
+            Jucați responsabil. Nu garantăm câștiguri.<br>
+            Această aplicație este destinată exclusiv divertismentului și analizei statistice.<br><br>
+            <strong>Ultima actualizare:</strong> 6 Ianuarie 2026 | <strong>Versiune:</strong> 2.0
         </p>
 
         <a href="index.html" class="back-link">← Înapoi la Documente</a>
     </div>
 </body>
 </html>
+
