@@ -95,6 +95,13 @@
         .back-link:hover {
             background: #047857;
         }
+        .footer-note {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e5e7eb;
+            color: #666;
+            text-align: center;
+        }
         code {
             background: #f1f5f9;
             padding: 2px 6px;
@@ -114,8 +121,8 @@
         <h1>🔒 POLITICA DE CONFIDENȚIALITATE</h1>
         <div class="meta">
             <strong>Aplicație:</strong> LotoRO - Analiză Statistică Loto<br>
-            <strong>Ultima actualizare:</strong> 6 Ianuarie 2026<br>
-            <strong>Versiune:</strong> 2.0 (actualizat complet - GDPR compliant)<br>
+            <strong>Ultima actualizare:</strong> 15 Ianuarie 2026<br>
+            <strong>Versiune:</strong> 2.1 (actualizat pentru referral, FCM, Crashlytics și AdMob)<br>
             <strong>App Version:</strong> 1.0.6+38
         </div>
 
@@ -257,7 +264,7 @@
                 <li>✅ Device information (model, OS, versiune app) - pentru targeting notificări</li>
             </ul>
             <p><strong>Stocare:</strong> Firebase Realtime Database (Google)</p>
-            <p><strong>Procesare:</strong> Google (conform <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a>)</p>
+            <p><strong>Procesare:</strong> Google (conform <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy Policy</a>)</p>
             <p><strong>⚖️ Baza legală GDPR:</strong> Articolul 6(1)(f) - Interes legitim (funcționalitate esențială)</p>
             <p><strong>🎛️ Control:</strong> Poți dezactiva notificările din Settings → Notificări</p>
         </div>
@@ -273,7 +280,7 @@
                 <li>✅ Logs relevante (doar pentru debugging)</li>
             </ul>
             <p><strong>Stocare:</strong> Firebase (Google)</p>
-            <p><strong>Procesare:</strong> Google (conform <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a>)</p>
+            <p><strong>Procesare:</strong> Google (conform <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy Policy</a>)</p>
             <p><strong>⚖️ Baza legală GDPR:</strong> Articolul 6(1)(f) - Interes legitim (îmbunătățire calitate)</p>
             <p><strong>🎛️ Control:</strong> Nu poți dezactiva (necesar pentru stabilitate aplicație)</p>
             <p><strong>🔒 Securitate:</strong> Nu colectăm date personale - doar informații tehnice despre crash-uri</p>
@@ -289,7 +296,7 @@
                 <li>✅ Device information (model, OS) - pentru identificare device-uri lente</li>
             </ul>
             <p><strong>Stocare:</strong> Firebase (Google)</p>
-            <p><strong>Procesare:</strong> Google (conform <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a>)</p>
+            <p><strong>Procesare:</strong> Google (conform <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy Policy</a>)</p>
             <p><strong>⚖️ Baza legală GDPR:</strong> Articolul 6(1)(f) - Interes legitim (optimizare performanță)</p>
             <p><strong>🎛️ Control:</strong> Nu poți dezactiva (necesar pentru optimizare)</p>
             <p><strong>🔒 Securitate:</strong> Nu colectăm date personale - doar metrici de performanță</p>
@@ -306,7 +313,7 @@
                 <li>✅ <strong>Test user emails</strong> (pentru programul de testare - doar dacă te înscrii)</li>
             </ul>
             <p><strong>Stocare:</strong> Firebase Realtime Database (Google, regiunea UE)</p>
-            <p><strong>Procesare:</strong> Google (conform <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a>)</p>
+            <p><strong>Procesare:</strong> Google (conform <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy Policy</a>)</p>
             <p><strong>⚖️ Baza legală GDPR:</strong></p>
             <ul>
                 <li>✅ <strong>Extrageri:</strong> Articolul 6(1)(f) - Interes legitim (funcționalitate esențială)</li>
@@ -329,7 +336,7 @@
                 <li>✅ App version - pentru rollout gradual features</li>
             </ul>
             <p><strong>Stocare:</strong> Firebase (Google)</p>
-            <p><strong>Procesare:</strong> Google (conform <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a>)</p>
+            <p><strong>Procesare:</strong> Google (conform <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy Policy</a>)</p>
             <p><strong>⚖️ Baza legală GDPR:</strong> Articolul 6(1)(f) - Interes legitim (funcționalitate esențială)</p>
             <p><strong>🔒 Securitate:</strong> Nu colectăm date personale - doar informații tehnice</p>
         </div>
@@ -343,7 +350,7 @@
                 <li>✅ Device information (model, OS) - pentru identificare device-uri suspecte</li>
             </ul>
             <p><strong>Stocare:</strong> Firebase (Google)</p>
-            <p><strong>Procesare:</strong> Google (conform <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a>)</p>
+            <p><strong>Procesare:</strong> Google (conform <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy Policy</a>)</p>
             <p><strong>⚖️ Baza legală GDPR:</strong> Articolul 6(1)(f) - Interes legitim (securitate)</p>
             <p><strong>🔒 Securitate:</strong> Nu colectăm date personale - doar verificări de securitate</p>
         </div>
@@ -356,15 +363,15 @@
                 <li>✅ Anonymous User ID (generat automat de Firebase, nu este legat de identitatea ta)</li>
             </ul>
             <p><strong>Stocare:</strong> Firebase Authentication (Google)</p>
-            <p><strong>Procesare:</strong> Google (conform <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a>)</p>
+            <p><strong>Procesare:</strong> Google (conform <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy Policy</a>)</p>
             <p><strong>⚖️ Baza legală GDPR:</strong> Articolul 6(1)(f) - Interes legitim (funcționalitate esențială)</p>
             <p><strong>🔒 Securitate:</strong> ID-ul este anonim și nu poate fi folosit pentru identificare personală</p>
         </div>
 
         <div class="highlight">
             <strong>📋 Rezumat Firebase:</strong><br>
-            Toate serviciile Firebase sunt procesate de Google conform <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a> 
-            și <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>. Google este GDPR-compliant și procesează date în regiunea UE.
+            Toate serviciile Firebase sunt procesate de Google conform <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy Policy</a>
+            și <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>. Google este GDPR-compliant și procesează date în regiunea UE.
         </div>
 
         <h3>4.2. Google AdMob (Reclame)</h3>
@@ -409,8 +416,8 @@
 
             <p><strong>📋 Politici AdMob:</strong></p>
             <ul>
-                <li>✅ <a href="https://support.google.com/admob/answer/6128543" target="_blank">AdMob Privacy Policy</a></li>
-                <li>✅ <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+                <li>✅ <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">AdMob Privacy Policy</a></li>
+                <li>✅ <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
             </ul>
         </div>
 
@@ -444,8 +451,8 @@
 
             <p><strong>📋 Politici:</strong></p>
             <ul>
-                <li>✅ <a href="https://policies.google.com/privacy" target="_blank">Google Play Privacy Policy</a></li>
-                <li>✅ <a href="https://www.apple.com/privacy/" target="_blank">Apple Privacy Policy</a></li>
+                <li>✅ <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Play Privacy Policy</a></li>
+                <li>✅ <a href="https://www.apple.com/privacy/" target="_blank" rel="noopener noreferrer">Apple Privacy Policy</a></li>
             </ul>
 
             <p><strong>Tipuri abonamente:</strong></p>
@@ -476,7 +483,7 @@
         <ul>
             <li>✅ <strong>Date locale:</strong> Vizibile în aplicație (Settings, Favorites, History, Wallet)</li>
             <li>✅ <strong>Date Firebase:</strong> Contactează-ne la loto.app.ro@gmail.com pentru acces</li>
-            <li>✅ <strong>Date AdMob:</strong> Acces prin <a href="https://myaccount.google.com/data-and-privacy" target="_blank">Google Account</a></li>
+            <li>✅ <strong>Date AdMob:</strong> Acces prin <a href="https://myaccount.google.com/data-and-privacy" target="_blank" rel="noopener noreferrer">Google Account</a></li>
         </ul>
 
         <h3>6.2. ✅ Dreptul de rectificare (Articolul 16 GDPR)</h3>
@@ -526,8 +533,8 @@
             Majoritatea datelor sunt procesate de servicii terțe (Google Firebase, Google AdMob). 
             Pentru exercitarea drepturilor GDPR privind aceste date, consultați:
             <ul>
-                <li>✅ <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
-                <li>✅ <a href="https://myaccount.google.com/data-and-privacy" target="_blank">Google Account - Data & Privacy</a></li>
+                <li>✅ <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+                <li>✅ <a href="https://myaccount.google.com/data-and-privacy" target="_blank" rel="noopener noreferrer">Google Account - Data & Privacy</a></li>
             </ul>
         </div>
 
@@ -552,7 +559,7 @@
         <p>Datele sunt procesate în următoarele regiuni:</p>
         <ul>
             <li>✅ <strong>Firebase:</strong> Regiunea UE (conform configurației Firebase)</li>
-            <li>✅ <strong>AdMob:</strong> Google (conform <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>)</li>
+            <li>✅ <strong>AdMob:</strong> Google (conform <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>)</li>
             <li>✅ <strong>Google Play / App Store:</strong> Conform politicilor respective</li>
         </ul>
         <p>Toate transferurile sunt protejate prin <strong>Standard Contractual Clauses (SCC)</strong> și conform GDPR.</p>
@@ -565,7 +572,7 @@
             <li>✅ <strong>Firebase Performance:</strong> 30 zile (conform Firebase policy)</li>
             <li>✅ <strong>Email-uri referral/test:</strong> Până la solicitare ștergere</li>
             <li>✅ <strong>FCM tokens:</strong> Până la dezinstalare sau reset token</li>
-            <li>✅ <strong>AdMob:</strong> Conform <a href="https://support.google.com/admob/answer/6128543" target="_blank">AdMob Privacy Policy</a></li>
+            <li>✅ <strong>AdMob:</strong> Conform <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">AdMob Privacy Policy</a></li>
         </ul>
 
         <h2>10. MODIFICĂRI ALE POLITICII</h2>
@@ -591,7 +598,7 @@
         <p>Pentru întrebări, solicitări GDPR sau reclamații despre această Politică de Confidențialitate:</p>
         <ul>
             <li>📧 <strong>Email:</strong> loto.app.ro@gmail.com</li>
-            <li>🌐 <strong>Website:</strong> <a href="https://loto-ro-admin.web.app" target="_blank">https://loto-ro-admin.web.app</a></li>
+            <li>🌐 <strong>Website:</strong> <a href="https://loto-ro-admin.web.app" target="_blank" rel="noopener noreferrer">https://loto-ro-admin.web.app</a></li>
             <li>📱 <strong>App Version:</strong> 1.0.6+38</li>
         </ul>
         <p><strong>Timp de răspuns:</strong> Maximum 48 ore lucrătoare</p>
@@ -600,7 +607,7 @@
         <p>Dacă considerați că procesarea datelor dumneavoastră încalcă GDPR, aveți dreptul să depuneți o plângere la:</p>
         <ul>
             <li>✅ <strong>Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP)</strong></li>
-            <li>🌐 <strong>Website:</strong> <a href="https://www.dataprotection.ro" target="_blank">https://www.dataprotection.ro</a></li>
+            <li>🌐 <strong>Website:</strong> <a href="https://www.dataprotection.ro" target="_blank" rel="noopener noreferrer">https://www.dataprotection.ro</a></li>
             <li>📧 <strong>Email:</strong> anspdcp@dataprotection.ro</li>
         </ul>
 
@@ -647,7 +654,7 @@
             <li>❌ Nu partajează date cu terțe părți (în afară de servicii terțe necesare, conform acestei politici)</li>
         </ul>
 
-        <p style="margin-top: 40px; padding-top: 20px; border-top: 2px solid #e5e7eb; color: #666; text-align: center;">
+    <p class="footer-note">
             <strong>© 2026 LotoRO. Toate drepturile rezervate.</strong><br>
             Jucați responsabil. Nu garantăm câștiguri.<br>
             Această aplicație este destinată exclusiv divertismentului și analizei statistice.<br><br>
