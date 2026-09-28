@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>LotoRO - Ștergerea contului și a datelor</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{
+            font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Helvetica','Arial',sans-serif;
+            background:linear-gradient(135deg,#f5f7fa,#c3cfe2);
+            color:#333;
+            line-height:1.55;
+            padding:32px
+        }
+        section{
+            background:#fff;
+            max-width:880px;
+            margin:0 auto;
+            padding:36px 40px;
+            border-radius:22px;
+            box-shadow:0 6px 34px rgba(0,0,0,.12)
+        }
+        h1{color:#059669;font-size:2.2em;margin-bottom:6px}
+        h2{color:#047857;font-size:1.25em;margin:30px 0 14px;border-bottom:2px solid #10b981;padding-bottom:6px}
+        p,li{font-size:.95em}
+        p{margin:8px 0}
+        ul,ol{margin:10px 0 22px 26px}
+        li{margin:4px 0}
+        .card{
+            background:#f0fdf4;
+            padding:16px 20px;
+            border-left:5px solid #10b981;
+            border-radius:14px;
+            margin:18px 0
+        }
+        code{background:#eef2f7;padding:2px 5px;border-radius:4px;font-size:.85em}
+        footer{
+            text-align:center;
+            margin-top:42px;
+            font-size:.75em;
+            color:#555
+        }
+        @media (max-width:600px){
+            body{padding:12px}
+            section{padding:24px 18px}
+            h1{font-size:1.7em}
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>🗑️ Ștergerea contului și a datelor</h1>
+        <p>
+            <strong>Aplicația:</strong> LotoRO (Google Play: <code>ro.lotoro.app</code>)<br>
+            <strong>Ultima actualizare:</strong> 28 septembrie 2026
+        </p>
+
+        <div class="card">
+            În LotoRO nu îți creezi un cont cu nume sau parolă. Aplicația folosește un
+            identificator anonim, creat automat la instalare. Poți cere oricând ștergerea
+            lui și a tuturor datelor legate de el, fie direct din aplicație, fie prin email.
+        </div>
+
+        <h2>1. Ștergerea din aplicație (recomandat)</h2>
+        <ol>
+            <li>Deschide aplicația LotoRO.</li>
+            <li>Mergi la <strong>Setări</strong>, secțiunea <strong>Cont</strong>.</li>
+            <li>Apasă <strong>Șterge contul și datele</strong> și confirmă.</li>
+        </ol>
+        <p>Ștergerea are loc imediat, iar la final aplicația îți confirmă că s-a încheiat.
+            Ai nevoie de conexiune la internet.</p>
+
+        <h2>2. Ștergerea prin email</h2>
+        <p>Dacă nu mai ai aplicația instalată, scrie-ne la
+            <a href="mailto:loto.app.ro@gmail.com?subject=Stergere%20date%20LotoRO">loto.app.ro@gmail.com</a>,
+            cu subiectul „Ștergere date LotoRO”. Dacă ne-ai trimis vreodată feedback cu adresa de email,
+            menționează acea adresă, ca să putem găsi mesajele. Răspundem în cel mult 30 de zile.</p>
+
+        <h2>3. Ce se șterge</h2>
+        <ul>
+            <li>Identificatorul anonim al aplicației (contul Firebase).</li>
+            <li>Drepturile Premium înregistrate pe server pentru acest identificator.</li>
+            <li>Mesajele de feedback trimise din aplicație, inclusiv adresa de email, dacă ai scris-o.</li>
+            <li>Datele vechi din programele promoționale închise, dacă există.</li>
+        </ul>
+
+        <h2>4. Ce se păstrează și de ce</h2>
+        <ul>
+            <li><strong>Evidența codurilor Premium folosite.</strong> Păstrăm faptul că un cod a fost
+                folosit, ca să nu poată fi refolosit. După ștergere, înregistrarea nu mai poate fi
+                legată de tine.</li>
+            <li><strong>Abonamentele cumpărate prin Google Play.</strong> Plățile și istoricul lor sunt
+                gestionate de Google. Ștergerea datelor din LotoRO <strong>nu anulează</strong> un
+                abonament activ: îl anulezi din Google Play, la Plăți și abonamente.</li>
+            <li><strong>Statistici, rapoarte de erori și reclame.</strong> Datele colectate de Google
+                Analytics, Firebase Crashlytics și Google AdMob nu conțin numele sau emailul tău.
+                Se șterg automat, conform perioadelor de păstrare stabilite de Google.</li>
+        </ul>
+
+        <h2>5. Datele de pe telefon</h2>
+        <p>Biletele din portofel, favoritele și setările sunt salvate doar pe telefonul tău și nu ajung
+            pe serverele noastre. Le ștergi complet dezinstalând aplicația sau ștergând datele ei din
+            setările telefonului (Aplicații → LotoRO → Stocare → Șterge datele).</p>
+
+        <p>Mai multe detalii găsești în <a href="privacy-policy.html">Politica de confidențialitate</a>.</p>
+
+        <footer>
+            LotoRO · <a href="index.html">Documente legale</a> · <a href="support.html">Suport</a>
+        </footer>
+    </section>
+</body>
+</html>
