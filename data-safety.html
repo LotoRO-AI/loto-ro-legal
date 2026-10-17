@@ -3,216 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>LotoRO - Data Safety</title>
+    <title>LotoRO - Siguranța datelor</title>
     <style>
         *{margin:0;padding:0;box-sizing:border-box}
-        body{
-            font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Helvetica','Arial',sans-serif;
-            line-height:1.55;
-            color:#333;
-            background:linear-gradient(135deg,#f5f7fa 0%,#c3cfe2 100%);
-            padding:30px
-        }
-        h1{color:#059669;font-size:2.1em;margin-bottom:6px}
-        h2{color:#047857;font-size:1.25em;margin:28px 0 12px;border-bottom:2px solid #10b981;padding-bottom:4px}
+        body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Helvetica','Arial',sans-serif;background:linear-gradient(135deg,#f5f7fa,#c3cfe2);color:#333;line-height:1.55;padding:32px}
+        section{background:#fff;max-width:880px;margin:0 auto;padding:36px 40px;border-radius:22px;box-shadow:0 6px 34px rgba(0,0,0,.12)}
+        h1{color:#059669;font-size:2.2em;margin-bottom:6px}
+        h2{color:#047857;font-size:1.25em;margin:30px 0 14px;border-bottom:2px solid #10b981;padding-bottom:6px}
+        h3{color:#065f46;font-size:1.05em;margin:18px 0 8px}
         p,li{font-size:.95em}
-        ul{margin:10px 0 18px 26px}
-        code{background:#eef2f7;padding:3px 6px;border-radius:4px;font-size:.85em}
-        section{
-            background:#fff;
-            padding:26px 30px;
-            border-radius:14px;
-            box-shadow:0 4px 16px rgba(0,0,0,.08);
-            max-width:950px;
-            margin:0 auto 30px
-        }
-        footer{
-            margin-top:40px;
-            text-align:center;
-            font-size:.8em;
-            color:#555
-        }
-        .badge{
-            display:inline-block;
-            background:#dbeafe;
-            color:#1e3a8a;
-            font-weight:600;
-            padding:4px 10px;
-            border-radius:999px;
-            font-size:.7em;
-            margin-left:8px
-        }
-        .info-box{
-            background:#dbeafe;
-            padding:16px 18px;
-            border-left:4px solid #3b82f6;
-            border-radius:10px;
-            margin:18px 0
-        }
-        table{
-            width:100%;
-            border-collapse:collapse;
-            font-size:.85em;
-            margin:12px 0
-        }
-        th,td{
-            padding:8px 10px;
-            text-align:left;
-            border-bottom:1px solid #e2e8f0
-        }
-        th{
-            background:#059669;
-            color:#fff
-        }
-        tr:nth-child(even){
-            background:#f0fdf4
-        }
+        p{margin:8px 0}
+        ul,ol{margin:10px 0 22px 26px}
+        li{margin:4px 0}
+        .card{background:#f0fdf4;padding:16px 20px;border-left:5px solid #10b981;border-radius:14px;margin:18px 0}
+        .warn{background:#fef3c7;padding:16px 20px;border-left:5px solid #f59e0b;border-radius:14px;margin:18px 0}
+        .danger{background:#fee2e2;padding:16px 20px;border-left:5px solid #ef4444;border-radius:14px;margin:18px 0}
+        table{width:100%;border-collapse:collapse;font-size:.85em;margin:12px 0 26px}
+        th,td{padding:8px 10px;text-align:left;border-bottom:1px solid #e2e8f0;vertical-align:top}
+        th{background:#059669;color:#fff}
+        tr:nth-child(even){background:#f0fdf4}
+        code{background:#eef2f7;padding:2px 5px;border-radius:4px;font-size:.85em}
+        footer{text-align:center;margin-top:42px;font-size:.75em;color:#555}
+        @media (max-width:600px){body{padding:12px}section{padding:24px 18px}h1{font-size:1.7em}}
     </style>
 </head>
 <body>
     <section>
-        <h1>🛡️ Data Safety – LotoRO</h1>
+        <h1>🛡️ Siguranța datelor (Google Play)</h1>
         <p>
-            <strong>Ultima actualizare:</strong> 6 Ianuarie 2026<br>
-            <strong>Versiune document:</strong> 2.0<br>
-            <strong>App Version:</strong> 1.0.6+38
+            <strong>Aplicația:</strong> LotoRO (Google Play: <code>ro.lotoro.app</code>)<br>
+            <strong>Ultima actualizare:</strong> 17 octombrie 2026<br>
+            <strong>Versiune document:</strong> 3.0
         </p>
 
-        <h2>1. Rezumat Rapid</h2>
-        <ul>
-            <li>Nu colectăm <strong>date personale directe</strong> (nume, email, telefon, locație GPS).</li>
-            <li>Datele de utilizare (favorite, istoricul generărilor, progres gamification, Wallet) sunt stocate <strong>local</strong> pe device.</li>
-            <li>Servicii externe: <strong>Google Firebase</strong> (notificări, crash reporting, performance) și <strong>Google AdMob</strong> (reclame în versiunea gratuită).</li>
-            <li>Utilizatorii Premium: <strong>0 reclame</strong>, niciun transfer către AdMob.</li>
-            <li>Email-uri pentru referral/test: doar dacă te înscrii <strong>voluntar</strong>.</li>
-        </ul>
-
-        <div class="info-box">
-            <strong>📋 Pentru detalii complete:</strong> Consultă <a href="privacy-policy.html">Politica de Confidențialitate</a>.
+        <div class="card">
+            Aceasta este oglinda declarației „Siguranța datelor” din Google Play. Biletele și pozele lor rămân pe telefon.
+            Datele sunt criptate în tranzit. Poți cere ștergerea lor oricând.
         </div>
 
-        <h2>2. Categorii de Date</h2>
+        <h2>1. Datele colectate</h2>
         <table>
-            <thead>
-                <tr>
-                    <th>Categorie</th>
-                    <th>Colectăm?</th>
-                    <th>Detalii</th>
-                </tr>
-            </thead>
+            <thead><tr><th>Categorie Google Play</th><th>Colectat</th><th>Partajat</th><th>Opțional</th><th>Scop</th></tr></thead>
             <tbody>
-                <tr>
-                    <td>Date personale (nume, email, telefon)</td>
-                    <td>❌</td>
-                    <td>Nu colectăm direct. Email-uri doar pentru referral/test (voluntar, consimțământ explicit).</td>
-                </tr>
-                <tr>
-                    <td>Financiare (card, PayPal)</td>
-                    <td>❌</td>
-                    <td>Procesate exclusiv de Google Play / App Store. Nu avem acces la date financiare.</td>
-                </tr>
-                <tr>
-                    <td>Locație precisă (GPS)</td>
-                    <td>❌</td>
-                    <td>Nu solicităm permisiunea GPS.</td>
-                </tr>
-                <tr>
-                    <td>Locație aproximativă</td>
-                    <td>Indirect prin AdMob</td>
-                    <td>Estimare pe baza IP (gestionat de Google AdMob, doar pentru versiunea gratuită).</td>
-                </tr>
-                <tr>
-                    <td>Identificatori dispozitiv</td>
-                    <td>Prin AdMob & Firebase</td>
-                    <td>AAID/IDFA (AdMob), FCM Token (Firebase), Anonymous User ID (Firebase Auth).</td>
-                </tr>
-                <tr>
-                    <td>Diagnostic / Crash</td>
-                    <td>✅ (Firebase Crashlytics)</td>
-                    <td>Stack traces, device info, app state (doar pentru debugging și îmbunătățire).</td>
-                </tr>
-                <tr>
-                    <td>Performance metrics</td>
-                    <td>✅ (Firebase Performance)</td>
-                    <td>Timp răspuns, frame rate, device info (doar pentru optimizare).</td>
-                </tr>
-                <tr>
-                    <td>Analytics comportament</td>
-                    <td>❌</td>
-                    <td>Nu folosim Google Analytics sau servicii similare.</td>
-                </tr>
-                <tr>
-                    <td>Publicitate</td>
-                    <td>✅ (Free users)</td>
-                    <td>Date gestionate de AdMob – vezi <a href="privacy-policy.html">Privacy Policy</a>.</td>
-                </tr>
-                <tr>
-                    <td>Wallet (bilete scanate)</td>
-                    <td>✅ (Local only)</td>
-                    <td>Stocate exclusiv local pe device. Nu sunt transmise pe internet (în afară de verificare câștiguri care folosește doar numerele).</td>
-                </tr>
-                <tr>
-                    <td>Cameră / Imagini</td>
-                    <td>✅ (Temporar, local)</td>
-                    <td>Procesate local pentru OCR/barcode scanning. Imaginile NU sunt salvate sau transmise.</td>
-                </tr>
+                <tr><td>Locație aproximativă (din adresa IP)</td><td>Da</td><td>Da (AdMob)</td><td>Nu</td><td>Analiză, reclame, prevenirea fraudei</td></tr>
+                <tr><td>Adresă de email</td><td>Da</td><td>Nu</td><td>Da (doar dacă o scrii în feedback)</td><td>Comunicări ale dezvoltatorului</td></tr>
+                <tr><td>Istoricul achizițiilor</td><td>Da</td><td>Nu</td><td>Nu</td><td>Funcționalitatea aplicației (activare Premium), analiză</td></tr>
+                <tr><td>Interacțiuni cu aplicația</td><td>Da</td><td>Da (AdMob)</td><td>Nu</td><td>Analiză, reclame, prevenirea fraudei</td></tr>
+                <tr><td>Alt conținut generat de utilizator (mesajul de feedback)</td><td>Da</td><td>Nu</td><td>Da</td><td>Comunicări ale dezvoltatorului</td></tr>
+                <tr><td>Jurnale de erori</td><td>Da</td><td>Nu</td><td>Nu</td><td>Funcționalitatea aplicației, analiză</td></tr>
+                <tr><td>Diagnosticare</td><td>Da</td><td>Da (AdMob)</td><td>Nu</td><td>Funcționalitatea aplicației, analiză</td></tr>
+                <tr><td>Identificatori de dispozitiv sau alți identificatori (inclusiv ID de publicitate)</td><td>Da</td><td>Da (AdMob)</td><td>Nu</td><td>Funcționalitatea aplicației, analiză, reclame, prevenirea fraudei, gestionarea contului</td></tr>
             </tbody>
         </table>
 
-        <h2>3. Stocare & Transfer</h2>
+        <h2>2. Ce NU colectăm</h2>
         <ul>
-            <li><strong>Local:</strong> Hive + SharedPreferences – date statistice, preferințe, Wallet (bilete scanate).</li>
-            <li><strong>Firebase Realtime Database:</strong> Extrageri loto (date publice), email-uri referral/test (voluntar), FCM tokens.</li>
-            <li><strong>Firebase Crashlytics:</strong> Crash reports (90 zile retenție).</li>
-            <li><strong>Firebase Performance:</strong> Performance metrics (30 zile retenție).</li>
-            <li><strong>AdMob:</strong> Date pentru reclame (doar versiunea gratuită).</li>
-            <li><strong>Premium:</strong> Nu există transfer către AdMob.</li>
+            <li>Nume, telefon, adresă, contacte, locație precisă.</li>
+            <li>Datele cardului: plata se face în Google Play.</li>
+            <li><strong>Biletele din portofel și pozele lor</strong>: rămân pe telefon. Textul din poze este citit pe telefon (ML Kit) și nu este încărcat.</li>
         </ul>
 
-        <h2>4. Control Utilizator</h2>
+        <h2>3. Consimțământ</h2>
+        <p>Acolo unde este cerut, aplicația afișează un formular de consimțământ pentru reclame. Firebase Analytics rulează cu Google Consent Mode: stocarea pentru analiză și reclame este refuzată până când o accepți în formular.</p>
+
+        <h2>4. Securitate</h2>
         <ul>
-            <li><strong>Ștergere date locale:</strong> Settings → Date → Clear All Data</li>
-            <li><strong>Ștergere Wallet:</strong> Settings → Wallet → Clear All</li>
-            <li><strong>Reset / opt-out personalizare reclame:</strong><br>
-                • Android: Settings → Google → Ads → <em>Opt out of Ads Personalization</em><br>
-                • iOS: Settings → Privacy → Advertising → <em>Limit Ad Tracking</em></li>
-            <li><strong>Dezactiva notificări:</strong> Settings → Notificări</li>
-            <li><strong>Dezinstalare aplicație:</strong> = ștergere completă date locale</li>
-            <li><strong>Email-uri referral/test:</strong> Contactează-ne la loto.app.ro@gmail.com pentru ștergere</li>
+            <li>Datele sunt criptate în tranzit (HTTPS).</li>
+            <li>Contul este anonim: nu există nume sau parolă.</li>
+            <li>Abonamentul este verificat de serverul nostru împreună cu Google Play.</li>
         </ul>
 
-        <h2>5. Baza Legală (GDPR)</h2>
-        <ul>
-            <li><strong>Firebase services:</strong> Interes legitim (Art. 6(1)(f)) – funcționalități esențiale.</li>
-            <li><strong>AdMob:</strong> Interes legitim (Art. 6(1)(f)) + Consimțământ (Art. 6(1)(a)) – monetizare versiune gratuită.</li>
-            <li><strong>Email-uri referral/test:</strong> Consimțământ explicit (Art. 6(1)(a)) – voluntar.</li>
-            <li><strong>Cameră (Wallet):</strong> Executare contract (Art. 6(1)(b)) – funcționalitate solicitată.</li>
-            <li><strong>Premium IAP:</strong> Executare contract (Art. 6(1)(b)).</li>
-        </ul>
+        <h2>5. Ștergerea datelor</h2>
+        <p>În aplicație: <strong>Setări → Cont → Șterge contul și datele</strong>. Sau prin email la <a href="mailto:loto.app.ro@gmail.com">loto.app.ro@gmail.com</a>. Ce se șterge și ce se păstrează: <a href="stergere-date.html">Ștergerea contului și a datelor</a>. Datele de pe telefon dispar la dezinstalare; datele de pe server rămân până la ștergerea contului.</p>
 
-        <h2>6. Date ale Minorilor</h2>
-        <p>Aplicația este destinată exclusiv utilizatorilor <strong>18+</strong>. Nu colectăm date pentru verificarea vârstei – responsabilitatea aparține utilizatorului și mediului familial.</p>
+        <h2>6. Mai multe</h2>
+        <p>Detalii complete: <a href="privacy-policy.html">Politica de confidențialitate</a>.</p>
 
-        <h2>7. Servicii Terțe</h2>
-        <ul>
-            <li><strong>Google Firebase:</strong> FCM, Crashlytics, Performance, Realtime Database, Remote Config, App Check, Anonymous Auth</li>
-            <li><strong>Google AdMob:</strong> Reclame (doar versiunea gratuită)</li>
-            <li><strong>Google Play / App Store:</strong> Procesare plăți premium</li>
-        </ul>
-        <p>Toate serviciile terțe sunt GDPR-compliant. Consultă <a href="privacy-policy.html">Privacy Policy</a> pentru detalii.</p>
-
-        <h2>8. Întrebări</h2>
-        <p>
-            📧 Email: <strong>loto.app.ro@gmail.com</strong><br>
-            ⏱️ Răspuns: max 48h lucrătoare<br>
-            🌐 Website: <a href="https://loto-ro-admin.web.app">https://loto-ro-admin.web.app</a>
-        </p>
-
-        <p style="margin-top:25px;font-size:.75em;color:#555">
-            Acest document rezumă structurat formularul <em>Data Safety</em> pentru Google Play. 
-            Pentru detalii extinse vezi <a href="privacy-policy.html">Politica de Confidențialitate</a>.
-        </p>
+        <footer>
+            LotoRO · <a href="index.html">Documente legale</a> · <a href="support.html">Suport</a> · <a href="stergere-date.html">Ștergerea datelor</a><br>
+            © 2026 LotoRO. Toate drepturile rezervate.
+        </footer>
     </section>
-    <footer>© 2026 LotoRO. Toate drepturile rezervate.</footer>
 </body>
 </html>

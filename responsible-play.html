@@ -6,129 +6,84 @@
     <title>LotoRO - Joc Responsabil</title>
     <style>
         *{margin:0;padding:0;box-sizing:border-box}
-        body{
-            font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Helvetica','Arial',sans-serif;
-            background:linear-gradient(135deg,#f5f7fa,#c3cfe2);
-            color:#333;
-            line-height:1.55;
-            padding:28px
-        }
-        section{
-            background:#fff;
-            max-width:900px;
-            margin:0 auto;
-            padding:34px;
-            border-radius:18px;
-            box-shadow:0 6px 28px rgba(0,0,0,.1)
-        }
-        h1{color:#059669;font-size:2.15em;margin-bottom:6px}
-        h2{color:#047857;font-size:1.3em;margin:28px 0 14px;border-bottom:2px solid #10b981;padding-bottom:6px}
-        ul{margin:8px 0 20px 26px}
-        li,p{font-size:.95em}
-        .alert{
-            background:#fef3c7;
-            padding:16px 18px;
-            border-left:5px solid #f59e0b;
-            border-radius:10px;
-            margin:18px 0;
-            font-size:.9em
-        }
-        .danger{
-            background:#fee2e2;
-            padding:16px 18px;
-            border-left:5px solid #ef4444;
-            border-radius:10px;
-            margin:18px 0;
-            font-size:.9em
-        }
-        footer{
-            text-align:center;
-            margin-top:38px;
-            font-size:.75em;
-            color:#555
-        }
+        body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Helvetica','Arial',sans-serif;background:linear-gradient(135deg,#f5f7fa,#c3cfe2);color:#333;line-height:1.55;padding:32px}
+        section{background:#fff;max-width:880px;margin:0 auto;padding:36px 40px;border-radius:22px;box-shadow:0 6px 34px rgba(0,0,0,.12)}
+        h1{color:#059669;font-size:2.2em;margin-bottom:6px}
+        h2{color:#047857;font-size:1.25em;margin:30px 0 14px;border-bottom:2px solid #10b981;padding-bottom:6px}
+        h3{color:#065f46;font-size:1.05em;margin:18px 0 8px}
+        p,li{font-size:.95em}
+        p{margin:8px 0}
+        ul,ol{margin:10px 0 22px 26px}
+        li{margin:4px 0}
+        .card{background:#f0fdf4;padding:16px 20px;border-left:5px solid #10b981;border-radius:14px;margin:18px 0}
+        .warn{background:#fef3c7;padding:16px 20px;border-left:5px solid #f59e0b;border-radius:14px;margin:18px 0}
+        .danger{background:#fee2e2;padding:16px 20px;border-left:5px solid #ef4444;border-radius:14px;margin:18px 0}
+        table{width:100%;border-collapse:collapse;font-size:.85em;margin:12px 0 26px}
+        th,td{padding:8px 10px;text-align:left;border-bottom:1px solid #e2e8f0;vertical-align:top}
+        th{background:#059669;color:#fff}
+        tr:nth-child(even){background:#f0fdf4}
+        code{background:#eef2f7;padding:2px 5px;border-radius:4px;font-size:.85em}
+        footer{text-align:center;margin-top:42px;font-size:.75em;color:#555}
+        @media (max-width:600px){body{padding:12px}section{padding:24px 18px}h1{font-size:1.7em}}
     </style>
 </head>
 <body>
     <section>
-        <h1>🎲 Joc Responsabil</h1>
+        <h1>🎲 Joc responsabil</h1>
         <p>
-            <strong>Ultima actualizare:</strong> 6 Ianuarie 2026<br>
-            <strong>Versiune document:</strong> 2.0<br>
-            <strong>App Version:</strong> 1.0.6+38
+            <strong>Aplicația:</strong> LotoRO (Google Play: <code>ro.lotoro.app</code>)<br>
+            <strong>Ultima actualizare:</strong> 17 octombrie 2026<br>
+            <strong>Versiune document:</strong> 3.0
         </p>
 
+        <div class="warn">
+            <strong>Important:</strong> LotoRO este o aplicație informativă. Nu este afiliată cu Loteria Română, nu vinde bilete și nu garantează câștiguri.
+            Numerele generate nu cresc șansa de a câștiga. Aplicația este pentru persoane de peste 18 ani.
+        </div>
+
+        <h2>1. Principii</h2>
+        <ul>
+            <li>Stabilește un buget și nu îl depăși.</li>
+            <li>Nu juca pentru a recupera pierderi.</li>
+            <li>Nu considera jocul o sursă de venit.</li>
+            <li>Fă pauze regulate.</li>
+            <li>Nu juca sub influența alcoolului sau într-o stare emoțională dificilă.</li>
+            <li>Verifică rezultatele oficiale pe <a href="https://www.loto.ro" target="_blank" rel="noopener noreferrer">loto.ro</a>.</li>
+        </ul>
+
+        <h2>2. Semne de risc</h2>
+        <ul>
+            <li>Simți nevoia să crești sumele jucate.</li>
+            <li>Ascunzi cât joci de familie sau de prieteni.</li>
+            <li>Folosești bani destinați cheltuielilor esențiale.</li>
+            <li>Ești stresat sau ai insomnii din cauza jocului.</li>
+            <li>Îți neglijezi munca sau familia.</li>
+        </ul>
+
+        <h2>3. Unde ceri ajutor</h2>
         <div class="danger">
-            <strong>⚠️ ATENȚIE:</strong> <strong>LotoRO</strong> este o aplicație de analiză statistică și divertisment. 
-            <strong>NU garantează câștiguri</strong>. Nu prezice viitoare rezultate. Folosiți aplicația responsabil.
+            <p>Linia de ajutor pentru jocuri de noroc: <strong>0800 800 099</strong> (apel gratuit).</p>
+            <p>Informații și sprijin: <a href="https://jocresponsabil.ro" target="_blank" rel="noopener noreferrer">jocresponsabil.ro</a></p>
         </div>
-
-        <h2>1. Principii de Bază</h2>
         <ul>
-            <li>Setați un <strong>buget clar</strong> și nu îl depășiți.</li>
-            <li>Nu jucați pentru a <strong>recupera pierderi</strong>.</li>
-            <li>Nu considerați jocul o <strong>sursă de venit</strong>.</li>
-            <li>Luați <strong>pauze regulate</strong> – evitați sesiunile compulsive.</li>
-            <li>Nu jucați sub influența alcoolului sau într-o stare emoțională instabilă.</li>
-            <li>Verificați <strong>întotdeauna</strong> rezultatele pe site-ul oficial <a href="https://www.loto.ro" target="_blank">loto.ro</a>.</li>
+            <li>Oficiul Național pentru Jocuri de Noroc: <a href="https://www.onjn.gov.ro" target="_blank" rel="noopener noreferrer">onjn.gov.ro</a></li>
         </ul>
 
-        <h2>2. Semne de Risc</h2>
+        <h2>4. Ce nu face LotoRO</h2>
         <ul>
-            <li>Nevoia de a crește constant suma pariată.</li>
-            <li>Ascunderea sumei reale investite de familie/prieteni.</li>
-            <li>Folosirea banilor destinați cheltuielilor esențiale.</li>
-            <li>Stres, anxietate sau insomnie legate de joc.</li>
-            <li>Neglijarea responsabilităților (muncă, familie).</li>
-            <li>Folosirea aplicației zilnic, fără pauze.</li>
+            <li>Nu vinde bilete și nu primește mize.</li>
+            <li>Nu influențează și nu prezice rezultatele extragerilor.</li>
+            <li>Nu garantează câștiguri. Fiecare extragere este independentă.</li>
+            <li>Rezultatele din aplicație sunt informative; cele oficiale sunt pe loto.ro.</li>
         </ul>
 
-        <h2>3. Cum Te Protejezi</h2>
-        <ul>
-            <li>Stabilește <strong>limite</strong> (timp & buget).</li>
-            <li>Notează sumele investite pentru transparență.</li>
-            <li>Nu juca <strong>zilnic</strong> – evită formarea unui obicei.</li>
-            <li>Apelează la <strong>suport profesional</strong> dacă apar semne de dependență.</li>
-            <li>Folosește funcționalitatea <strong>Wallet</strong> pentru a urmări biletele și a evita dubluri.</li>
-        </ul>
+        <h2>5. Contact</h2>
+        <p><a href="mailto:loto.app.ro@gmail.com">loto.app.ro@gmail.com</a></p>
 
-        <h2>4. Resurse Utile</h2>
-        <ul>
-            <li>📞 <strong>ONJN – Linia Telefonică:</strong> 031.225.6202</li>
-            <li>📞 <strong>Linia Verde Jocuri de Noroc:</strong> 0800 800 100 (gratuit, 24/7)</li>
-            <li>🌐 <strong>ONJN:</strong> <a href="https://www.onjn.gov.ro" target="_blank">https://www.onjn.gov.ro</a></li>
-            <li>🆘 <strong>Joc Responsabil:</strong> <a href="https://jocresponsabil.ro" target="_blank">https://jocresponsabil.ro</a></li>
-            <li>🌐 <strong>Website oficial Loteria Română:</strong> <a href="https://www.loto.ro" target="_blank">https://www.loto.ro</a></li>
-        </ul>
-
-        <h2>5. Minorii</h2>
-        <div class="alert">
-            <strong>🚨 RESTRICȚIE DE VÂRSTĂ: 18+</strong><br><br>
-            Aplicația este destinată exclusiv persoanelor <strong>18+</strong>. Nu colectăm date pentru verificarea vârstei – 
-            responsabilitatea aparține utilizatorului și mediului familial.
-        </div>
-
-        <h2>6. Disclaimer Important</h2>
-        <ul>
-            <li>❌ <strong>NU garantează câștiguri</strong> la loterie</li>
-            <li>❌ <strong>NU vinde bilete</strong> la loterie</li>
-            <li>❌ <strong>NU procesează plăți</strong> pentru bilete</li>
-            <li>❌ <strong>NU influențează</strong> rezultatele extragerilor</li>
-            <li>⚠️ Rezultatele sunt generate pe bază de <strong>analiză statistică</strong> - nu sunt predicții garantate</li>
-            <li>📊 Statisticile nu garantează rezultate viitoare - fiecare extragere este independentă</li>
-        </ul>
-
-        <h2>7. Concluzie</h2>
-        <p>
-            Participarea la jocuri de noroc implică <strong>risc financiar și emoțional</strong>. LotoRO oferă doar instrumente statistice – 
-            alegerile finale aparțin utilizatorului.
-        </p>
-
-        <p>
-            📧 Contact suport: <strong>loto.app.ro@gmail.com</strong> (răspuns max 48h)<br>
-            🌐 Website: <a href="https://loto-ro-admin.web.app">https://loto-ro-admin.web.app</a>
-        </p>
+        <footer>
+            LotoRO · <a href="index.html">Documente legale</a> · <a href="support.html">Suport</a> · <a href="stergere-date.html">Ștergerea datelor</a><br>
+            © 2026 LotoRO. Toate drepturile rezervate.
+        </footer>
     </section>
-    <footer>© 2026 LotoRO. Toate drepturile rezervate.</footer>
 </body>
 </html>
